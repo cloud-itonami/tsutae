@@ -4,7 +4,7 @@
   production-progress (no-cid / with-cid / unknown-stage), quality (pass/fail/rework state
   transitions), device-attestation quorum, and the settlement tithe split (intent vs executed)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [tsutae.methods.agent :as a]))
 
 (deftest test-device-order-success
