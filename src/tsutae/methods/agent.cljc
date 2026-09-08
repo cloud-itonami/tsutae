@@ -8,7 +8,7 @@
 
   OMITTED legs: the `__main__` demo. The Murakumo LLM host binding is the `*llm*` dynamic var
   (nil → \"LLM_NOT_AVAILABLE\" fallback, like the kotoba `llm` import-fallback); no handler calls it."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def TITHE-BPS 1000)   ; 10% TitheRouter auto-split (G18), basis points
 

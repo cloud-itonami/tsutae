@@ -6,7 +6,7 @@
   Constitutional guard: G9 (§2(b) anti-IP-locking) — open RISC-V SoC mandatory; Snapdragon / Apple
   A / closed Helio / Exynos / Dimensity rejected by construction (N1). PcbState dataclass →
   string-keyed map under \"pcb_state\" (all fields present, nil for unset, mirroring __dict__)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def open-soc-allowlist
   ["StarFive-JH7110" "SiFive-HiFive-Unmatched" "Allwinner-D1" "iwakura"])

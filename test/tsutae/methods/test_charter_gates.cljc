@@ -1,7 +1,7 @@
 (ns tsutae.methods.test-charter-gates
   "tsutae 伝え — constitutional-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [cheshire.core :as json]))
 
 (def ^:private here (.getParentFile (java.io.File. ^String *file*)))
@@ -62,7 +62,7 @@
     (doseq [field ["bootloader" "unlockStateAtShipDefault" "blobRatioPercent" "g7BinaryBlobAudit"]]
       (is (contains? req field) (str "G2/G7: firmwareAttestation must require " field)))
     ;; `name` knownValues span the OS field + the bootloader field; both are open by design.
-    (let [names (set (map str/lower-case (known doc "name")))
+    (let [names (set (map str/lower (known doc "name")))
           closed ["knox" "sep" "ios" "windows" "snapdragon" "proprietary" "closed"]]
       (is (not (some (fn [n] (some #(str/includes? n %) closed)) names)) "G2: no proprietary/closed firmware representable")
       (is (and (contains? names "linux-mainline") (contains? names "grapheneos-class")) "G2: open OS options (Linux-mainline / GrapheneOS) must be present"))))
