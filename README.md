@@ -3,7 +3,7 @@
 Canonical metadata, contracts, and seed data are EDN. Runtime code lives under
 `src/tsutae`, tests under `test/tsutae`, schemas under `schema/`, and
 external wire projections—when needed—belong only under `wire/`.
-Run the standalone suite with `bb test`.
+Run the standalone suite with `kbb -M:test`.
 
 **DID**: `did:web:etzhayyim.com:tsutae`
 **Namespace**: `com.etzhayyim.tsutae.*`

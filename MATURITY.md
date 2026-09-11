@@ -9,7 +9,7 @@ hardware + firmware + SoC; closes the EoL loop with kanayama.
 | Lexicons | ✅ 6 under `com.etzhayyim.tsutae.*` (chassis/pcb/firmware/device/recyclingCertificate/silenTsutaeReview) — rich gate-hook ledger |
 | Cells | 🟡 path-reserved (R0) |
 | Manifest | ✅ `manifest.jsonld` — `constitutionalGates` (G1–G14) machine-readable |
-| Tests | ✅ standalone Clojure suites under `test/tsutae`; run with `bb test` |
+| Tests | ✅ standalone Clojure suites under `test/tsutae`; run with `kbb -M:test` |
 | Methods | 🟡 offline engine = R1 |
 
 ## Charter gates pinned by the new charter-gate test
@@ -35,4 +35,4 @@ hardware + firmware + SoC; closes the EoL loop with kanayama.
 silenTsutaeReview `r1-benchtop-poc` + `r1-starfive-jh7110-bsp-open-source` + Council Lv6+.
 
 > **Standalone migration:** runtime code is under `src/tsutae`, tests under
-> `test/tsutae`, and canonical contracts/data are EDN. Run with `bb test`.
+> `test/tsutae`, and canonical contracts/data are EDN. Run with `kbb -M:test`.
