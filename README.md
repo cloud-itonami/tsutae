@@ -132,4 +132,4 @@ com.etzhayyim.tsutae.{
 - `/20-actors/watatsumi/README.md` — Sibling (YouTube methodology + structural exclusion pattern)
 - `/20-actors/makura/README.md` — Sibling (§2(c) consumer good translation precedent — no-electronics → with-electronics)
 - `/CHARTER-RIDER.md` — §2(b) IP + §2(c) surveillance + §2(d) addiction + §2(e) repair
-- `/CLAUDE.md` — Religious-corp status table row 55
+- `/AGENTS.md` — Religious-corp status table row 55

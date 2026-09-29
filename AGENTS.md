@@ -1,4 +1,4 @@
-# tsutae standalone actor — CLAUDE.md
+# tsutae standalone actor — AGENTS.md
 
 ## Identity
 
@@ -144,5 +144,5 @@ R0 = declaration only. Actual lexicon record flow activates at consumer's R-phas
 - `/orgs/etzhayyim/com-etzhayyim-igata/README.md` — Sibling (HPDC Al chassis R3 upstream)
 - `/20-actors/kanayama/README.md` — Sibling (EOL Al recovery downstream)
 - `/20-actors/makura/README.md` — Sibling (§2(c) consumer good translation precedent)
-- `/CLAUDE.md` — Status table row 55
+- `/AGENTS.md` — Status table row 55
 - `/CHARTER-RIDER.md` — §2(b) IP + §2(c) surveillance + §2(d) addiction + §2(e) repair
